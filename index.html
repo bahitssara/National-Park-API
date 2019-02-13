@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>National Park Search</title>
+        <meta name="NPS" content="Search CO National parks">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+       <div class="container">
+        <h1>Search National Parks</h1>
+            <form>
+                <label for="input-bar">Search Here</label>
+                    <input type="text" name="input-bar" id="input-search" placeholder="ex: CO"><button value="input">Submit</button>
+                <label for="max-results" class="result-label">Result Number</label>
+                    <input type="number" name="max-results" id="js-max-results" value="10" max="10">
+            </form>
+        <p id="js-error-message" class="error-message"></p>
+            <section class="results hidden">
+                <h2>Results</h2>
+            </section>    
+       </div>
+        <script src="index.js"></script>
+    </body>
+</html>
